@@ -19,6 +19,7 @@
   file:
     path: "{{ supervisor_log_dir }}"
     state: directory
+    owner: "{{ supervisor_user }}"
     mode: 0755
 
 - include: config.yml
